@@ -68,7 +68,7 @@ local function notify_server(ban_reason, steam_id, playerip, ext_data) // For we
 			end
 		end, 
 		function( failed ) end, 
-		{["Authorization"] = hashKey}
+		{["Authorization"] = 'Bearer '..hashKey}
 	)
 end
 
